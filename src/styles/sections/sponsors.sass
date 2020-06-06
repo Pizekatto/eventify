@@ -1,0 +1,60 @@
+.sponsors
+  padding: 5rem 0
+  margin-bottom: 5rem
+  text-align: center
+  background-color: #f5f8ff
+  &-container
+    position: relative
+    overflow: hidden
+    &:hover .slider-control
+      opacity: 1
+      cursor: pointer
+  &-box
+    display: flex
+    height: 200px
+  &-item
+    display: flex
+    align-items: center
+    flex: 0 0 auto
+    padding: 1rem
+.slider-control
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  margin-top: -2.5rem
+  margin-left: -2.5rem
+  opacity: 0
+  width: 5rem
+  height: 5rem
+  border-radius: 50%
+  background-color: rgba(0,0,0,.3)
+  transition: opacity .3s ease-out, background-color .2s ease-out
+  &:hover
+    background-color: rgba(0,0,0,.5)
+  path
+    stroke: #fcff33
+    fill: none
+.pause-icon
+  stroke-width: 10px
+  stroke-linecap: round
+  .slider-control.play &
+    display: none
+.play-icon
+  display: none
+  stroke-width: 6px
+  stroke-linejoin: round
+  .slider-control.play &
+    display: inline
+.progress
+  r: 48
+  cx: 50
+  cy: 50
+  stroke: #ff448c
+  stroke-width: 4px
+  stroke-dasharray: 302
+  stroke-dashoffset: 302
+  transform: rotate(-90deg)
+  transform-origin: 50px 50px 0
+  // stroke-linecap: round
+  fill: none

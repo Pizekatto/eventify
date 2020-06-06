@@ -1,0 +1,77 @@
+.header
+  height: 100vh
+  position: relative
+  margin: 0 0 var(--section-bottom-offset)
+  padding: var(--section-top-offset)
+  color: #fff
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  background-image: linear-gradient(to right, rgba(16, 43, 175, 0.2) 0%, rgba(22, 100, 255, 0.2) 100%), url(../assets/images/header-bg.jpg)
+  @include media-breakpoint-up(sm)
+    height: auto
+    margin: 0 15px var(--section-bottom-offset)
+    border-radius: 0 0 2rem 2rem
+  &-title, &-sub-title
+    text-transform: uppercase
+  &-title
+    margin-bottom: 1.5rem
+    font-size: 2.5rem
+    color: inherit
+    @include media-breakpoint-up(md)
+      font-size: 3.5rem
+    @include media-breakpoint-up(lg)
+      font-size: 4.5rem
+  &-sub-title
+    margin-bottom: 7rem
+    font-size: 1.5rem
+    font-weight: 500
+    color: inherit
+    @include media-breakpoint-up(sm)
+      margin-bottom: 3rem
+    @include media-breakpoint-up(md)
+      font-size: 2rem
+  &-btn
+    &:first-of-type
+      margin-right: 1rem
+      @include media-breakpoint-up(sm)
+        margin-right: 1.75rem
+  &-hero-content
+    text-align: center
+    padding-top: 50px
+    @include media-breakpoint-up(sm)
+      padding-top: 100px
+  &-countdown
+    margin-bottom: 6rem
+    @include media-breakpoint-up(sm)
+      margin-bottom: 4rem
+
+.count-content
+  width: 90px
+  display: inline-block
+  text-align: center
+  @include media-breakpoint-up(sm)
+    width: 130px
+  &:nth-child(1)
+    color: #ee163a
+  &:nth-child(2)
+    color: #ffc107
+  &:nth-child(3)
+    color: #03a9f4
+  &:nth-child(4)
+    color: #8bc34a
+  & span
+    &:nth-of-type(1)
+      font-weight: 600
+      font-size: 2.5rem
+      @include media-breakpoint-up(sm)
+        font-size: 3rem
+      @include media-breakpoint-up(md)
+        font-size: 4.5rem
+    &:nth-of-type(2)
+      font-weight: 600
+      font-size: 1rem
+      @include media-breakpoint-up(sm)
+        font-size: 1.125rem
+      @include media-breakpoint-up(md)
+        font-size: 1.25rem

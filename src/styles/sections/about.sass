@@ -1,0 +1,56 @@
+.about
+  position: relative
+  margin-bottom: var(--section-bottom-offset)
+  &-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    @include media-breakpoint-up(md)
+      flex-direction: row
+  &-info
+    flex: 0 0 100%
+    @include media-breakpoint-up(md)
+      flex: 0 0 60%
+      padding-left: 2rem
+    @include media-breakpoint-up(lg)
+      flex: 0 0 50%
+  &-image
+    text-align: center
+    flex: 0 0 70%
+    margin-bottom: 2rem
+    @include media-breakpoint-up(md)
+      flex: 0 0 40%
+      margin-bottom: 0
+      align-self: flex-start
+    @include media-breakpoint-up(lg)
+      flex: 0 0 50%
+  &-title
+    text-align: center
+    margin-bottom: 2rem
+    @include media-breakpoint-up(sm)
+      text-align: left
+  &-text
+    margin-bottom: 2.5rem
+  &-date
+    font-weight: 600
+    span
+      &:nth-child(1)
+        position: relative
+        padding-left: 13px
+        font-size: 2rem
+        color: #1863ff
+        position: relative
+        &::before
+          position: absolute
+          bottom: 0
+          left: 0
+          content: ''
+          width: 55px
+          height: 55px
+          border: 6px solid rgba(24, 99, 255, .18)
+          border-radius: 1rem
+      &:nth-child(2)
+        font-size: 1.125rem
+        font-weight: 600
+        color: $h-color
+        white-space: pre

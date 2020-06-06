@@ -1,0 +1,80 @@
+.features
+  margin-bottom: var(--section-bottom-offset)
+  padding: var(--section-top-offset) 0
+  background-color: #f5f8ff
+  text-align: center
+  @include media-breakpoint-up(md)
+    padding: 120px 0
+  &-items
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    counter-reset: feature
+  &-col
+    flex: 0 0 100%
+    margin: 0 0 2rem
+    @include media-breakpoint-up(lg)
+      flex: 0 0 $part-4
+      padding: 0 15px
+.single-feature
+  display: flex
+  align-items: center
+  height: 100%
+  padding: 2rem 1.25rem .5rem
+  background-color: #fff
+  border-radius: 1rem
+  @include media-breakpoint-up(md)
+    padding: 2.5rem 1.25rem
+  @include media-breakpoint-up(lg)
+    display: block
+  &-title
+    margin-bottom: 1.5rem
+  &-content
+    text-align: left
+    @include media-breakpoint-up(lg)
+      text-align: inherit
+  &-icon
+    --number-height: 4rem
+    @include media-breakpoint-up(sm)
+      --number-height: 6rem
+    @include media-breakpoint-up(lg)
+      --number-height: 8rem
+    flex: 0 0 30%
+    margin-right: 1rem
+    position: relative
+    display: inline-block
+    height: var(--number-height)
+    counter-increment: feature
+    @include media-breakpoint-up(md)
+      flex: 0 0 30%
+    @include media-breakpoint-up(lg)
+      width: 100%
+    &::before
+      @extend %bg-cover
+      content: "0" counter(feature)
+      font-size: var(--number-height)
+      font-weight: 600
+      line-height: 1
+      color: $gray-200
+    &::after
+      position: relative
+      display: inline-block
+      width: 50%
+      height: 100%
+      content: ''
+      background-size: 40%
+      background-position: center center
+      background-repeat: no-repeat
+      .features-col:nth-child(1) &
+        background-image: url(../assets/images/icons/microphone.svg)
+      .features-col:nth-child(2) &
+        background-image: url(../assets/images/icons/users.svg)
+      .features-col:nth-child(3) &
+        background-image: url(../assets/images/icons/bullhorn.svg)
+      .features-col:nth-child(4) &
+        background-image: url(../assets/images/icons/cup.svg)
+      .features-col:nth-child(5) &
+        background-image: url(../assets/images/icons/heart.svg)
+      .features-col:nth-child(6) &
+        background-image: url(../assets/images/icons/gallery.svg)
+

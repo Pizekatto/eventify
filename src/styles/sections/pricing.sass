@@ -1,0 +1,95 @@
+.pricing
+  text-align: center
+  margin-bottom: 5rem
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include media-breakpoint-up(lg)
+      flex-direction: row
+    @include media-breakpoint-up(xl)
+      padding: 0
+  &-col
+    max-width: 80%
+    margin-bottom: 2rem
+    @include media-breakpoint-up(lg)
+      padding: 0 10px
+      flex: 0 0 $part-4
+      padding: 0 15px
+  &-card
+    flex: 0 0 100%
+    display: flex
+    flex-flow: row wrap
+    height: 100%
+    border-radius: 1rem
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, .1)
+    @include media-breakpoint-up(sm)
+      flex-flow: row nowrap
+    @include media-breakpoint-up(lg)
+      display: block
+      padding: 0 0 50px
+  &-price
+    flex: 0 0 100%
+    padding: 1rem .5rem
+    color: #fff
+    border-radius: 1rem 1rem 0 0
+    background-image: linear-gradient(.25turn, rgba(24, 99, 255, .85), rgb(30, 147, 255))
+    @include media-breakpoint-up(sm)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      flex: 1 1 auto
+      max-width: 40%
+      padding: 0 3rem
+      border-radius: 1rem 0 0 1rem
+    @include media-breakpoint-up(lg)
+      flex: 0 0 100%
+      max-width: none
+      display: block
+      height: auto
+      padding: 20px 0 30px
+      margin-bottom: 2rem
+      border-radius: 1rem 1rem 0 0
+      background-size: 100%
+      background-repeat: no-repeat
+      background-image: linear-gradient(.25turn, rgba(24, 99, 255, .85), rgba(24, 99, 255, .85)), url(../assets/images/pricing-bg.jpg)
+    span
+      display: block
+      &:nth-child(1)
+        font-size: 2.25rem
+        font-weight: 600
+        white-space: nowrap
+  &-content
+    flex: 0 0 100%
+    text-align: center
+    padding: 1rem 2rem
+    @include media-breakpoint-up(sm)
+      flex: 1 1 auto
+      max-width: 60%
+      text-align: left
+    @include media-breakpoint-up(lg)
+      flex: 0 1 auto
+      max-width: none
+      text-align: inherit
+      padding: 0
+  &-name
+    margin-bottom: 1rem
+    white-space: nowrap
+    @include media-breakpoint-up(lg)
+      margin-bottom: 2rem
+  &-title
+    text-transform: uppercase
+  &-list
+    margin-bottom: 1rem
+    @include media-breakpoint-up(lg)
+      margin-bottom: 2rem
+    & li
+      margin-bottom: .5rem
+      font-size: .875rem
+      @include media-breakpoint-up(lg)
+        margin-bottom: 1rem
+        font-size: inherit
+  &-btn
+    text-align: center
+    border: 2px solid rgba(24, 99, 255, .1)

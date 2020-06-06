@@ -1,0 +1,104 @@
+.event
+  margin-bottom: var(--section-bottom-offset)
+  text-align: center
+  &-title
+    text-transform: uppercase
+  &-container
+    border-radius: 1rem
+    @include media-breakpoint-up(lg)
+      padding: 40px 70px
+  &-nav
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    margin-bottom: 40px
+    padding: 1rem
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)
+    border-radius: 1rem
+    &-tab
+      position: relative
+      flex: 0 0 46%
+      padding: 1rem .5rem
+      color: #777
+      @include media-breakpoint-up(sm)
+        flex: 0 0 23%
+      @include media-breakpoint-up(xl)
+        flex: 0 0 22%
+    input[type="radio"]
+      position: absolute
+      outline: none
+      opacity: 0
+      &:checked + label
+        background-color: rgba(24, 99, 255, .15)
+      &:focus + label
+        outline: none
+        border-color: #6899ff
+    label
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border-radius: 1rem
+      cursor: pointer
+      transition: background-color .2s
+      border: 2px solid transparent
+      &:hover
+        background-color: rgba(24, 99, 255, .05)
+    &-title
+      text-transform: uppercase
+      color: inherit
+    &-date
+      font-size: .875rem
+      color: inherit
+      @include media-breakpoint-up(md)
+        font-size: 1rem
+.tab-content
+  display: none
+.single-event
+  display: flex
+  flex-flow: row wrap
+  position: relative
+  z-index: 1
+  margin-bottom: 2rem
+  background-color: #f5f8ff
+  transition: all .3s
+  border-radius: 1rem
+  @include media-breakpoint-up(sm)
+    margin: 0 auto 2rem
+    max-width: 70%
+  @include media-breakpoint-up(md)
+    max-width: none
+    flex-flow: row nowrap
+  &-image
+    display: none
+    flex: 0 0 100%
+    border-radius: 1rem 1rem 0 0
+    overflow: hidden
+    @include media-breakpoint-up(md)
+      display: block
+      flex: 0 0 35%
+      border-radius: 1rem 0 0 1rem
+    @include media-breakpoint-up(xl)
+      flex: 0 0 23%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      @include media-breakpoint-up(sm)
+        height: 100%
+      @include media-breakpoint-up(xl)
+        height: auto
+  &-content
+    flex: 0 0 100%
+    padding: 25px
+    text-align: left
+    @include media-breakpoint-up(md)
+      flex: 0 1 auto
+  &-meta
+    display: flex
+    flex-direction: column
+    @include media-breakpoint-up(lg)
+      flex-direction: row
+    li:not(:last-child)
+      margin-right: 20px
