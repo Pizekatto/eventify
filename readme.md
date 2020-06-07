@@ -18,7 +18,7 @@ Navbar переходит в состояние `Sticky` используя `Int
 ### Slider control
 ![slider control](./src/assets/video/slider.gif)
 
-Кнопка пуска и паузы слайдера на SVG с анимацией паузы между слайдами
+Кнопка пуска и паузы слайдера на SVG с анимацией паузы между слайдами. Запускается по достижению видимости.
 ### Ресурсы
 #### lorem-ipsum
 Для вставки произвольного текста через `data-` атрибут использована библиотека [lorem-ipsum.js](https://github.com/knicklabs/lorem-ipsum.js)
