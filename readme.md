@@ -12,7 +12,7 @@ Navbar переходит в состояние `Sticky` используя `Int
 
 Таймер обратного отсчета
 ### Tabs
-![tabs](./src/assets/video/tabs.gif)
+![tabs](./src/assets/video/tabs.png)
 
 Табы на `input type="radio"`
 ### Slider control
