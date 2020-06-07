@@ -8,10 +8,16 @@ npm start
 ### Sticky Navbar
 Navbar переходит в состояние `Sticky` используя `Intersection Observer`. Логотип меняется на телефонном разрешении через `mediaQueryList`. Секции отслеживаются и подсвечиваются. Переходы по якорям с эффектом `SmoothScroll`.
 ### Date Timer
+![timer](./src/assets/video/timer.gif)
+
 Таймер обратного отсчета
 ### Tabs
-Кастомные табы на `input type="radio"`
+![tabs](./src/assets/video/tabs.gif)
+
+Табы на `input type="radio"`
 ### Slider control
+![slider control](./src/assets/video/slider.gif)
+
 Кнопка пуска и паузы слайдера на SVG с анимацией паузы между слайдами
 ### Ресурсы
 #### lorem-ipsum
