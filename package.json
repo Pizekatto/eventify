@@ -1,7 +1,7 @@
 {
-  "name": "basic",
+  "name": "eventify",
   "version": "1.0.0",
-  "description": "SaaS Landing Page",
+  "description": "Event site",
   "privat": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
@@ -49,8 +49,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "animate.css": "^4.1.0",
-    "bezier-easing": "^2.1.0",
     "bootstrap": "^4.5.0",
     "lorem-ipsum": "^2.0.3",
     "smoothscroll-polyfill": "^0.4.4",

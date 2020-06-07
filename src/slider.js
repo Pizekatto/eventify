@@ -1,5 +1,4 @@
 import { Swiper, Autoplay} from 'swiper/js/swiper.esm'
-// import easing from 'bezier-easing'
 
 Swiper.use([Swiper, Autoplay])
 
